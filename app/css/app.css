@@ -2336,6 +2336,19 @@
   clip: auto;
 }
 
+body {
+  background-color: lightgray;
+}
+
+h1 {
+  color: white;
+}
+
+h1:hover {
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -11656,15 +11669,3 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-body {
-  background-color: lightgray;
-}
-
-h1 {
-  color: white;
-}
-
-h1:hover {
-  -webkit-transition: color 1s ease;
-  transition: color 1s ease;
-}

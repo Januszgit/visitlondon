@@ -58,7 +58,7 @@ rules:
 
   no-extends: 0
 
-  no-ids: 1
+  no-ids: 0
 
   no-important: 1
 

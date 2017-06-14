@@ -1,0 +1,79 @@
+%navigation {
+  @include clearfix;
+  background-color: $nav-bg-color;
+  padding: 10px;
+
+  h2 {
+    margin: 0;
+    text-align: left;
+
+    &.site-name {
+      display: none;
+
+      @include tablet {
+        display: inline-block;
+      }
+    }
+
+    &.nav-title {
+      display: block;
+      text-align: center;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    display: inline;
+    margin-top: 10px;
+
+    @include tablet {
+      float: right;
+    }
+
+    a {
+      color: $menu-anchor-color;
+      display: block;
+      font-size: $menu-anchor-font-size;
+      margin-bottom: 20px;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        color: $menu-anchor-hover-color;
+      }
+
+      @include tablet {
+        display: inline;
+        text-align: left;
+      }
+
+      @include desktop {
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.navigation {
+  @extend %navigation;
+}
+
+.footer-navigation {
+  @extend %navigation;
+
+  .menu {
+    float: left;
+
+    a {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+}
